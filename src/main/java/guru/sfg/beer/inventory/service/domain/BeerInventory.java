@@ -16,12 +16,9 @@
  */
 package guru.sfg.beer.inventory.service.domain;
 
-import lombok.Builder;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
-import javax.persistence.Entity;
+import jakarta.persistence.*;
 import java.sql.Timestamp;
 import java.util.UUID;
 
@@ -31,6 +28,8 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
+@AllArgsConstructor
+@Builder
 @Entity
 public class BeerInventory extends BaseEntity{
 
