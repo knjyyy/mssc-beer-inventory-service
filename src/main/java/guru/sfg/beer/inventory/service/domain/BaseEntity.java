@@ -24,6 +24,7 @@ import org.hibernate.annotations.*;
 import org.hibernate.type.SqlTypes;
 
 import java.sql.Timestamp;
+import java.sql.Types;
 import java.util.UUID;
 
 /**
@@ -50,8 +51,8 @@ public class BaseEntity {
             strategy = "org.hibernate.id.UUIDGenerator"
     )
 
-    @JdbcTypeCode(SqlTypes.UUID)
-    @Column(length = 36, columnDefinition = "varchar", updatable = false, nullable = false )
+    @JdbcTypeCode(Types.VARCHAR)
+    @Column(length = 36, columnDefinition = "varchar(36)", updatable = false, nullable = false )
     private UUID id;
 
     @Version
