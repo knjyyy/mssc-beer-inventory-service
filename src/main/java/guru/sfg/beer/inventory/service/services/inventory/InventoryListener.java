@@ -1,7 +1,7 @@
 package guru.sfg.beer.inventory.service.services.inventory;
 
-import com.spring.msscbeerservice.events.common.BeerDto;
-import com.spring.msscbeerservice.events.common.NewInventoryEvent;
+import com.spring.brewery.model.events.BeerDto;
+import com.spring.brewery.model.events.NewInventoryEvent;
 import guru.sfg.beer.inventory.service.config.JmsConfig;
 import guru.sfg.beer.inventory.service.domain.BeerInventory;
 import guru.sfg.beer.inventory.service.repositories.BeerInventoryRepository;

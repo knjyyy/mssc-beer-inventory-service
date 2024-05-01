@@ -1,4 +1,4 @@
-package com.spring.msscbeerservice.events.common;
+package com.spring.brewery.model.events;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.AllArgsConstructor;
